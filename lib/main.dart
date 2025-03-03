@@ -3,7 +3,9 @@ import 'package:flutter/services.dart';
 import 'utilities/app_color.dart';
 import 'utilities/app_font.dart';
 import 'utilities/routes.dart';
+import 'view/vendor/other_screen/blurredImage.dart';
 import 'view/vendor/other_screen/splash_screen.dart';
+
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
@@ -32,9 +34,9 @@ class MyApp extends StatelessWidget {
         ),
         fontFamily: AppFont.fontFamily,
       ),
-      initialRoute: Splash.routeName,
+      // initialRoute: Splash.routeName,
       routes: routes,
-      home: const Splash(),
+      home: BlurredImage(),
     );
   }
 }
